@@ -1,5 +1,10 @@
-.destacado {
-    color: red;
-    text - decoration: underline;
-    font - size: calc(1.5rem + 1.5vw);
-}
+$(function () {
+
+    $("h1").on("mouseenter", function () {
+        $(this).addClass("destacado");
+    });
+
+    $("h1").on("mouseleave", function () {
+        $(this).removeClass("destacado");
+    });
+});
